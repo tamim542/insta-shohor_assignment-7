@@ -1,6 +1,6 @@
 let posts=[ ];
 
-const likedPostsId = [];
+let likedPostsId = [];
 let reportedPostsId = [];
 
 const getLikedPosts = () => {
@@ -156,6 +156,7 @@ const displayLikedPosts = () => {
         const div = createPost(post);
         document.getElementById( "liked" ).appendChild(div);
     });
+    likedPostsId=[];
 };
 
 const displayReportedPosts = () => {
@@ -177,4 +178,3 @@ const loadPosts = async () =>{
 }
 
 loadPosts();
-////dhf
